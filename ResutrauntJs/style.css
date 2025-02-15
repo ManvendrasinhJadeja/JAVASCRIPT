@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-card {
+    background-color: #000000;
+    border: 1px solid #dbdbdba2;
+    border-radius: 30px;
+    padding: 2rem;
+    width: 300px;
+}
+.login-card h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.login-card p {
+    margin-bottom: 1.5rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.5px solid #bab8b8b3;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.form-group input:focus {
+    outline: none;
+    border-width: 2px;
+}
+.forgot-password {
+    text-align: right;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+.forgot-password a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.submit-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    outline: 2px solid #ffffff;
+}
+.signup-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+.signup-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
+.error{
+    color: #f11313;
+    font-size: 12px;
+    margin-block:5px ;
+}

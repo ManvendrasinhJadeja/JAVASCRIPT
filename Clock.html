@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .clock {
+      width: 100%;
+      height: 100vh;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px;
+    }
+    #hrs_space,
+    #mins_space,
+    #sec_space {
+      color: white;
+      font-size: 100px;
+    }
+  </style>
+  <body>
+    <div class="clock" id="clock">
+      <div id="hrs_space"></div>
+      :
+      <div id="mins_space"></div>
+      :
+      <div id="sec_space"></div>
+    </div>
+  </body>
+  <script>
+    function clock() {
+      let clock = document.getElementById("clock");
+
+      let timeDate = new Date();
+      let hrs_space = document.getElementById("hrs_space");
+      let mins_space = document.getElementById("mins_space");
+      let sec_space = document.getElementById("sec_space");
+
+      let Hours = (hrs_space.innerText = timeDate.getHours());
+      let Mins = (mins_space.innerText = timeDate.getMinutes());
+      let Sec = (sec_space.innerText = timeDate.getSeconds());
+    }
+
+    setInterval(clock, 1000);
+    clock();
+  </script>
+</html>

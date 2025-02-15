@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoListApp</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", serif;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            background: #3d3d3d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .sub{
+            width: 800px;
+           min-height: 600px;
+           height: auto;
+            background: rgb(215, 215, 215);
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-block: 70px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .logo{
+            width: 170px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 30px;
+            font-weight:700;
+            color: #3d3d3d;
+        }
+        .logo img{
+            width:35px;
+            height:35px;
+        }
+        .msg{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgba(31, 77, 31, 0.883);
+            font-weight: 500;
+            font-size:18px;
+
+        }
+        .input{
+            width: 100%;
+            height: 120px;
+            padding-inline: 10%;
+            gap: 5px ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .input input{
+            min-width: 500px;
+            width: 90%;
+            height: 70px;
+            color: #3d3d3d;
+            display: flex;
+            align-items: center;
+            padding-inline:30px ;
+            outline: none;
+            border: none;
+            background-color: #3d3d3d;
+            border-radius: 25px;
+            color: rgb(215, 215, 215);
+            font-size: 22px;
+            font-weight: 400;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .input .AddBtn{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 50px;
+            background-color: #3d3d3d;
+            color:rgb(215, 215, 215) ;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            cursor: pointer;
+            
+        }
+        .content .list{
+            width: auto;
+            min-width: 50%;
+            height: auto;
+            min-height: 300px;
+            color:rgb(215, 215, 215) ;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            background-color:rgba(103, 103, 103, 0.739) ;
+            font-size: 22px;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            padding-inline: 10%;
+            padding-block: 7%;
+            font-weight: 500;
+        }
+        .content{
+            width: 100%;
+            margin-block: 30px;
+            height: auto;
+            gap: 20px;
+            padding-inline: 10%;
+
+
+        }
+     </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub">
+            <div class="logo">
+                ToDo List
+                 <img src="./Assets/vscode-icons--file-type-light-todo.png" alt="">
+            </div>
+            <div class="input" aria-autocomplete="none">
+                <input type="text" name="inp" id="addItem" placeholder="Enter the task">
+                <div class="AddBtn" id="AddBtn">
+                    +
+                </div>
+            </div>
+            <div class="msg" id="msg"></div>
+            <div class="content" id="content">
+                <div class="list" id="list">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

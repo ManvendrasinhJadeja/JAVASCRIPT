@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      height: 90vh;
+      width: 100%;
+      background: red;
+      overflow: hidden;
+      display: flex;
+    }
+    .sliderBg img {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      align-items: center;
+    }
+    .btn button {
+      width: 100px;
+      height: 50px;
+      
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="sliderBg">
+        <img src="bg1.jpg" alt="" />
+      </div>
+      <div class="sliderBg">
+        <img src="bg2.webp" alt="" />
+      </div>
+      <div class="sliderBg">
+        <img src="bg3.webp" alt="" />
+      </div>
+    </div>
+    <div class="btn">
+      <button id="nextBtn">Next</button>
+      <button id="prevBtn">Prev</button>
+    </div>
+  </body>
+  <script>
+    const main = document.getElementById("main");
+    const sliderBg = document.getElementsByClassName("sliderBg");
+    const next=document.getElementById("nextBtn");
+    const prev=document.getElementById("prevBtn");
+
+    let count = 100;
+    next.addEventListener("click",function(){
+        for(let i =0;i<sliderBg.length ;i++){
+            
+            sliderBg[i].style.transform = `translateX(-${count}%)`;
+            sliderBg[i].style.transition = "1s";
+            
+        }
+        count+=100
+        console.log(count);
+        
+    })
+    
+    prev.addEventListener("click",function(){
+        count-=100; 
+
+        for(let i =0;i<sliderBg.length ;i++){
+            
+            sliderBg[i].style.transform = `translateX(-${count}%)`;
+            sliderBg[i].style.transition = "1s";
+            console.log(count);
+            
+        }
+        
+    })
+
+  </script>
+</html>
