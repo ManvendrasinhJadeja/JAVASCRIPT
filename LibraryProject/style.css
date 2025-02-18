@@ -1,0 +1,195 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
+  background: linear-gradient(135deg, #7d7d7d 0%, #151414 100%);
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Input section */
+.inp {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+input {
+  width: 250px;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: #333;
+  backdrop-filter: blur(5px);
+}
+
+input::placeholder {
+  color: rgba(51, 51, 51, 0.7);
+}
+
+input:focus {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+button {
+  width: 180px;
+  height: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Display section */
+.display {
+  width: 100%;
+  min-height: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin-top: 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Card style */
+.card_Style {
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.card_Style:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
+}
+
+.card_Style img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.card_Text {
+  padding: 20px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_Title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card_Author {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Search Section */
+.search {
+  position: relative;
+  width: 300px;
+}
+
+.search_bar {
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: #333;
+  backdrop-filter: blur(5px);
+}
+
+.search_bar:focus {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.search_Result {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 300px;
+  overflow-y: auto;
+  backdrop-filter: blur(5px);
+}
+
+.result_Toggle {
+  display: flex;
+}
+
+.result_padding {
+  padding: 10px;
+}
+
+.result {
+  width: 100%;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+
+}
+
+.result:hover {
+  background: rgba(255, 255, 255, 0.4);
+}

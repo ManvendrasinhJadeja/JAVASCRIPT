@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inp" id="inp">
+      <input type="text" id="title" placeholder="Enter Title" />
+      <input
+        type="text"
+        name="author"
+        id="author"
+        placeholder="Enter author name"
+      />
+      <input type="text" name="url" id="url" placeholder="Enter image url" />
+     <div class="search">
+        <input type="search" id="search" class="search_bar" placeholder="search" />
+        <div class="search_Result" id="search_Result" style="z-index: 10;">
+        </div>
+     </div>
+      <button type="submit" id="submit">add</button>
+    </div>
+    <div class="display" id="display"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
