@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Register Page -->
+   <div class="page-container" style="display: none;">
+    <div class="fade-in">
+        <div class="text-center mb-12">
+            <div class="welcome-text">Get Started</div>
+            <h1 class="title">Create Account</h1>
+        </div>
+        
+        <form class="form-container">
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <label for="reg-username">Username</label>
+                    <input 
+                        id="reg-username"
+                        type="text" 
+                        placeholder="Choose a username" 
+                        required 
+                    />
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="email">Email</label>
+                    <input 
+                        id="email"
+                        type="email" 
+                        placeholder="Enter your email" 
+                        required 
+                    />
+                </div>
+                
+                <div class="input-wrapper">
+                    <label for="reg-password">Password</label>
+                    <input 
+                        id="reg-password"
+                        type="password" 
+                        placeholder="Create a password" 
+                        required 
+                    />
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-primary" id="regBtn">
+                Create Account
+            </button>
+            
+            <div class="divider">
+                <hr />
+                <span>or</span>
+                <hr />
+            </div>
+            
+            <a href="index.html" class="btn-secondary">
+                Sign In
+            </a>
+        </form>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

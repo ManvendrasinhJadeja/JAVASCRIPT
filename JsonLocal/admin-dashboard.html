@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Admin Dashboard -->
+ <div class="admin-container">
+    <div class="fade-in">
+        <div class="admin-header">
+            <div>
+                <h1 class="admin-title">Admin Dashboard</h1>
+                <p class="admin-subtitle">Manage your users</p>
+            </div>
+            
+            <a href="admin-register.html" class="btn-primary">
+                Register Admin
+            </a>
+        </div>
+        
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>john_doe</td>
+                        <td>john@example.com</td>
+                        <td>
+                            <span class="status-badge">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button class="action-btn">
+                                Edit
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>jane_smith</td>
+                        <td>jane@example.com</td>
+                        <td>
+                            <span class="status-badge">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button class="action-btn">
+                                Edit
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -133,6 +133,7 @@ button:hover {
 .search {
   position: relative;
   width: 300px;
+  z-index: 10;
 }
 
 .search_bar {
@@ -168,6 +169,7 @@ button:hover {
   max-height: 300px;
   overflow-y: auto;
   backdrop-filter: blur(5px);
+  z-index: 10;
 }
 
 .result_Toggle {
@@ -187,7 +189,7 @@ button:hover {
   cursor: pointer;
   border-radius: 10px;
   transition: 0.3s;
-
+z-index: 10;
 }
 
 .result:hover {
