@@ -53,7 +53,6 @@ function userMessage(){
    userMsg.innerText=userInput.value;
    chatBox.appendChild(userMsg);
    userMsg.scrollIntoView({behavior:"smooth"})
-
 }
 function getRandomElement(BOT_RESPONSES){
     return BOT_RESPONSES[Math.floor(Math.random()*BOT_RESPONSES.length)]
